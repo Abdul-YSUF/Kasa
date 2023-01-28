@@ -1,0 +1,35 @@
+.navigation {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+nav{
+    margin-left: 720px;
+}
+
+.nav-active {
+    padding: 30px;
+    width: 50%;
+    color: #ff6060;
+    position: relative;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-inactive {
+    padding:  30px;
+    width: 50%;
+    color: #ff6060;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo {
+    height: 47px;
+    margin-left: 60px;
+}

@@ -1,0 +1,30 @@
+.banner {
+    border-radius: 25px;
+    position: absolute;
+	width: 1150px;
+    height: 220px;
+    left: 60px;
+    right: 60px;
+    top: 120px;
+    z-index: -1;
+}
+
+.banner_about {
+    border-radius: 25px;
+    position: absolute;
+	width: 1150px;
+    height: 220px;
+    left: 60px;
+    right: 60px;
+    top: 120px;
+    z-index: -1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+	color: white;
+	font-size: 42px;
+	font-weight: 500;
+    margin-top: 135px;
+}
