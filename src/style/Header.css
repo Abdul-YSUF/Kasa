@@ -1,12 +1,14 @@
 .navigation {
     display: flex;
+    width: 100%;
     text-align: center;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 
-nav{
-    margin-left: 720px;
+nav {
+   margin-left: auto;
+   margin-right: 30px;
 }
 
 .nav-active {
@@ -32,4 +34,32 @@ nav{
 .logo {
     height: 47px;
     margin-left: 60px;
+    margin-top: 8px;
+}
+
+/*Mobile de 356px à 767px*/ 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .navigation {
+        margin-top: 10px;
+    }
+    nav {
+        margin-right: 10px;
+    }
+
+    .nav-active {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .nav-inactive {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .logo {
+        margin-right: 115px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
 }

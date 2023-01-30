@@ -1,30 +1,43 @@
 .banner {
-    border-radius: 25px;
-    position: absolute;
-	width: 1150px;
-    height: 220px;
-    left: 60px;
-    right: 60px;
-    top: 120px;
-    z-index: -1;
+    position: relative;
 }
 
-.banner_about {
+.banner_img {
+    width: 92%;
     border-radius: 25px;
     position: absolute;
-	width: 1150px;
-    height: 220px;
-    left: 60px;
-    right: 60px;
-    top: 120px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: -70px;
     z-index: -1;
+    object-fit: cover;
+    mix-blend-mode: darken;
+    filter: brightness(0.60);
 }
 
-.title {
+.banner_title {
     display: flex;
     justify-content: center;
 	color: white;
 	font-size: 42px;
 	font-weight: 500;
-    margin-top: 135px;
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    
+    .banner_img {
+        width: 92.5%;
+        height: 160px;
+        margin-left: 20px;
+        margin-top: -50px;
+        border-radius: 10px;
+    }
+
+    .banner_title {
+        font-size: 24px;
+        margin-top: 80px;
+        width: 45%;
+        margin-left: 40px;
+    }
 }

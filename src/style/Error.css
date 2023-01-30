@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+  
+.erreur {
+    color: #ff6060;
+    font-size: 200px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+  
+.erreur_description {
+    color: #ff6060;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.erreur_retour {
+    font-size: 18px;
+    color: #ff6060;
+    margin-top: 100px;
+}
