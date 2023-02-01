@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style/Main.css'
+import '../style/Gallery.css'
 import { Link } from 'react-router-dom';
 
-const Main = (props) => {
+const Gallery = (props) => {
     return (
     <article>
         <Link to={`/logement/${props.id}`} className='gallery'>
@@ -14,4 +14,4 @@ const Main = (props) => {
     );
 };
 
-export default Main;
+export default Gallery;
