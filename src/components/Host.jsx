@@ -1,10 +1,12 @@
 import React from 'react';
+import "../style/Host.css"
 
-const Host = () => {
+const Host = ({host}) => {
     return (
-        <div>
-            
-        </div>
+        <div className="host">
+        <p className="host_name">{host.name}</p>
+        <img className="host_img" alt="" src={host.picture} />
+      </div>
     );
 };
 

@@ -10,19 +10,29 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Logement = () => {
-  const {id} = useParams();
-	const [logement, setLogement] = useState({});
+  const { id } = useParams();
+  const [logement, setLogement] = useState({});
 
-	useEffect(() => {
-		fetch('../logement.json')
-			.then((res) => res.json())
-			.then((article) => {
-				const data = article.find(item => item.id === id);
-				setLogement(data);
-			}).catch((error) => (error));
-	});
+  useEffect(() => {
+    fetch("../logement.json")
+      .then((res) => res.json())
+      .then((article) => {
+        const data = article.find((item) => item.id === id);
+        setLogement(data);
+      })
+      .catch((error) => error);
+  }, [id]);
 
-	const {title, location, pictures, rating, host, tags, description, equipments} = logement;
+  const {
+    title,
+    location,
+    pictures,
+    rating,
+    host,
+    tags,
+    description,
+    equipments,
+  } = logement;
 
   return (
     <div>
@@ -38,7 +48,7 @@ const Logement = () => {
           <Host host={host} />
         </div>
       </div>
-      <div className="logement__dropdown">
+      <div className="logement_dropdown">
         <Dropdown title="Équipements" description={equipments}></Dropdown>
         <Dropdown title="Description" description={description}></Dropdown>
       </div>
