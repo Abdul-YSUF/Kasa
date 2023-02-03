@@ -1,4 +1,4 @@
-.navigation {
+.header {
     display: flex;
     width: 100%;
     text-align: center;
@@ -39,7 +39,7 @@ nav {
 
 /*Mobile de 356px à 767px*/ 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-    .navigation {
+    .haeder {
         margin-top: 10px;
     }
     nav {

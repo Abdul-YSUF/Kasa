@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import banner from '../assets/banner_accueil.png'
 import Gallery from '../components/Gallery';
-import {data} from '../logement/fiche'
+import data from '../data/logement.json'
 import Footer from '../components/Footer';
 
 const Accueil = () => {
