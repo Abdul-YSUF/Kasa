@@ -18,3 +18,27 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+@media screen and (max-width: 991px) {
+  .host {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .host_img {
+    max-width: 48px;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .host {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .host_img {
+    max-width: 32px;
+    aspect-ratio: 1/1;
+  }
+}

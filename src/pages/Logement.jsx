@@ -6,8 +6,6 @@ import Host from "../components/Host";
 import Rate from "../components/Rate";
 import Title from "../components/Title";
 import Tags from "../components/Tags";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const Logement = () => {
   const { id } = useParams();
@@ -21,7 +19,7 @@ const Logement = () => {
         setLogement(data);
       })
       .catch((error) => error);
-  }, [id]);
+  });
 
   const {
     title,
@@ -35,8 +33,7 @@ const Logement = () => {
   } = logement;
 
   return (
-    <div>
-      <Header />
+    <>
       <Carrousel pictures={pictures}></Carrousel>
       <div className="logement_div">
         <div className="logement_title_tags">
@@ -44,7 +41,7 @@ const Logement = () => {
           <Tags tags={tags} />
         </div>
         <div className="logement_rate_host">
-          <Rate ratings={rating} />
+          <Rate rate={rating} />
           <Host host={host} />
         </div>
       </div>
@@ -52,8 +49,7 @@ const Logement = () => {
         <Dropdown title="Équipements" description={equipments}></Dropdown>
         <Dropdown title="Description" description={description}></Dropdown>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

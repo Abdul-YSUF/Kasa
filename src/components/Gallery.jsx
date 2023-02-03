@@ -2,13 +2,14 @@ import React from 'react';
 import '../style/Gallery.css'
 import { Link } from 'react-router-dom';
 
-const Gallery = (props) => {
+const Gallery = ({data}) => {
+    const {id, title, cover} = data;
     return (
     <article>
-        <Link to={`/logement/${props.id}`} className='gallery'>
-            <img src={props.cover} alt={props.title} className='gallery_img'/>
+        <Link to={`/logement/${id}`} className='gallery'>
+            <img src={cover} alt={title} className='gallery_img'/>
             <div className="gallery_div"></div>
-            <h2>{props.title}</h2>
+            <h2>{title}</h2>
         </Link>
     </article>
     );
