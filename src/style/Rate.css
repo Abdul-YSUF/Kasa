@@ -1,0 +1,13 @@
+.rate {
+    display:flex;
+    justify-content: right;
+    margin-top: 5px;
+}
+
+.filled_stars {
+    max-width: 24px;
+}
+
+.none_filled_stars {
+    max-width: 24px;
+}

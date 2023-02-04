@@ -48,7 +48,7 @@
 }
 
 /*Mobile de 356px à 767px*/ 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .gallery h2 {
         width: 80%;
     }

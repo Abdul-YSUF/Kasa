@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "../style/Logement.css";
 import Carrousel from "../components/Carrousel";
 import Dropdown from "../components/Dropdown";
 import Host from "../components/Host";
@@ -41,13 +42,19 @@ const Logement = () => {
           <Tags tags={tags} />
         </div>
         <div className="logement_rate_host">
-          <Rate rate={rating} />
           <Host host={host} />
+          <Rate rating={rating} />
         </div>
       </div>
       <div className="logement_dropdown">
-        <Dropdown title="Équipements" description={equipments}></Dropdown>
-        <Dropdown title="Description" description={description}></Dropdown>
+        <ul>
+          <li>
+            <Dropdown title="Description" description={description}></Dropdown>
+          </li>
+          <li>
+            <Dropdown title="Équipements" description={equipments}></Dropdown>
+          </li>
+        </ul>
       </div>
     </>
   );

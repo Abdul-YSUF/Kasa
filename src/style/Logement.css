@@ -1,0 +1,21 @@
+.logement_div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    padding-left: 80px;
+}
+
+.logement_dropdown {
+    margin-top: 130px;
+    margin-left: -100px;
+}
+
+.logement_dropdown ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+.logement_dropdown li {
+    width: 80%;
+    margin: -60px;
+}

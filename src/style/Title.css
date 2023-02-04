@@ -1,0 +1,21 @@
+.title_logement {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    color: #FF6060;
+    margin-top: 15px;
+}
+
+.location {
+    color: #FF6060;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .title_logement {
+        font-size: 1.125rem;
+    }
+}

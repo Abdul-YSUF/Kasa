@@ -17,6 +17,7 @@
     height: 47px;
     width: 70%;
     margin-left: 190px;
+    cursor: pointer;
 }
 
 .dropdown_title {

@@ -1,11 +1,12 @@
 .host {
   display: flex;
-  align-items: center;
+  padding-left: 760px;
   gap: 10px;
 }
 
 .host_name {
-  font-size: 18px;
+  color: #FF6060;
+  font-size: 14px;
   line-height: 26px;
   max-width: min-content;
   text-align: right;
@@ -13,7 +14,7 @@
 }
 
 .host_img {
-  max-width: 64px;
+  max-width: 50px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
