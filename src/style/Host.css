@@ -1,11 +1,12 @@
 .host {
   display: flex;
-  padding-left: 760px;
+  align-items: center;
   gap: 10px;
+  margin-top: -10px;
 }
 
 .host_name {
-  color: #FF6060;
+  color: #ff6060;
   font-size: 14px;
   line-height: 26px;
   max-width: min-content;
@@ -20,26 +21,14 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 991px) {
-  .host {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .host_img {
-    max-width: 48px;
-    aspect-ratio: 1/1;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .host {
     font-size: 12px;
     line-height: 14px;
   }
 
   .host_img {
-    max-width: 32px;
+    max-width: 40px;
     aspect-ratio: 1/1;
   }
 }

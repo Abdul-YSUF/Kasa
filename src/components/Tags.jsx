@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import "../style/Tags.css";
 
-const Tags = () => {
+const Tags = ({ tags }) => {
   return (
-    <div>
-      
+    <div className="tags">
+      {tags?.map((tag, index) => (
+        <span className="tag" key={index}>
+          {tag}
+        </span>
+      ))}
     </div>
   );
 };
