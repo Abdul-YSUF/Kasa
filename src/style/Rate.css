@@ -1,7 +1,7 @@
 .rate {
     display:flex;
     justify-content: right;
-    margin-top: 5px;
+    margin-right: 50px;
 }
 
 .filled_stars {
@@ -10,4 +10,10 @@
 
 .none_filled_stars {
     max-width: 24px;
+}
+
+@media screen and (max-width: 767px) {
+.rate {
+    margin-left: 20px;
+}
 }
