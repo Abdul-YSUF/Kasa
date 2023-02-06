@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Accueil from "./pages/Accueil";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
-import Erreur404 from "./pages/Erreur404";
+import Error404 from "./pages/Error404";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
         <Route path="/logement/:id" element={<Logement />} />
-        <Route path="/*" element={<Erreur404 />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
     <Footer />
     </BrowserRouter>

@@ -1,24 +1,22 @@
 .error {
+    color: #FF6060;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
   
-.erreur {
-    color: #FF6060;
+.error_404 {  
     font-size: 180px;
     font-weight: 700;
     margin-top: 50px;
 }
   
-.erreur_description {
-    color: #FF6060;
+.error_description {
     font-size: 36px;
-    margin-top: 20px;
 }
 
-.erreur_retour {
+.error_return {
     font-size: 18px;
     color: #FF6060;
     margin-top: 100px;

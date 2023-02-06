@@ -49,10 +49,15 @@ const Logement = () => {
       <div className="logement_dropdown">
         <ul>
           <li>
-            <Dropdown title="Description" description={description}></Dropdown>
+            <Dropdown title="Description" description={description} />
           </li>
           <li>
-            <Dropdown title="Équipements" description={equipments}></Dropdown>
+            <Dropdown
+              title="Équipements"
+              description={equipments?.map((column, index) => (
+                <div key={index}>{column}</div>
+              ))}
+            />
           </li>
         </ul>
       </div>
