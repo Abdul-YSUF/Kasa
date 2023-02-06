@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../style/Carrousel.css";
-import fleche from "../assets/arrow_right.png"
+import arrow_right from "../assets/arrow_right.png";
+import arrow_left from "../assets/arrow_left.png";
 
 function Carrousel({ pictures }) {
   const [slide, setSlide] = useState(0);
@@ -20,15 +21,15 @@ function Carrousel({ pictures }) {
   return (
     <div className="carrousel">
       {pictures?.length > 1 && (
-        <img className="fleche fleche-gauche" src={fleche} alt="" onClick={previousSlide}/>
+        <img className="arrow arrow_left" src={arrow_left} alt="" onClick={previousSlide}/>
       )}
       {pictures?.map((picture, index) => {
         return (
-          <img key={index} className={index === slide ? "carrousel-img actif" : "carrousel-img"} src={picture} alt="Logement"/>
+          <img key={index} className={index === slide ? "carrousel_img actif" : "carrousel_img"} src={picture} alt=""/>
         );
       })}
       {pictures?.length> 1 && (
-        <img className=" fleche fleche-droite" src={fleche} alt="" onClick={nextSlide}/>
+        <img className="arrow arrow_right" src={arrow_right} alt="" onClick={nextSlide}/>
       )}
     </div>
   );

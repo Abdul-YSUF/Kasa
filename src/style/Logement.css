@@ -1,8 +1,8 @@
 .logement_div {
-    margin-block: 24px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 45px;
     width: 100%;
 }
 
@@ -14,15 +14,15 @@
 .logement_rate_host {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 75px;
     gap: 20px;
 }
 
 .logement_dropdown {
     width: 100%;
-    margin-top: 65px;
+    margin-top: -20px;
     margin-left: -120px;
-    margin-bottom: -80px;
+    margin-bottom: -120px;
 }
 
 .logement_dropdown ul {
@@ -32,7 +32,8 @@
 
 .logement_dropdown li {
     width: 100%;
-    margin: -60px;
+    margin-left: -60px;
+    margin-right: -60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -44,12 +45,12 @@
     .logement_rate_host {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 0px;
+        margin-top: 30px;
     }
 
     .logement_dropdown {
-        margin-top: 80px;
-        margin-bottom: -200px;
+        margin-top: -40px;
+        margin-bottom: -140px;
         margin-left: 0px;
     }
 
@@ -61,7 +62,6 @@
     }
 
     .logement_dropdown li {
-        margin-bottom: 60px;
         margin-left: 0px;
     }
 }
