@@ -37,8 +37,8 @@ nav {
     margin-top: 8px;
 }
 
-/*Mobile de 356px à 767px*/ 
-@media screen and (max-width: 767px) {
+/*Mobile de 375px à 767px*/ 
+@media screen and (min-width: 375px) and (max-width: 767px) {
     nav {
         margin-right: 10px;
     }
@@ -54,7 +54,7 @@ nav {
     }
 
     .logo {
-        margin-right: 115px;
+        margin-right: 70px;
         height: 35px;
         margin-left: 20px;
     }

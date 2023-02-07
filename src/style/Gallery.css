@@ -48,8 +48,8 @@
     position: absolute;
 }
 
-/*Mobile de 356px à 767px*/ 
-@media screen and (max-width: 767px) {
+/*Mobile de 375px à 767px*/ 
+@media screen and (min-width: 375px) and (max-width: 767px) {
     .gallery h2 {
         width: 80%;
         top: -90px;
@@ -57,7 +57,7 @@
 
     .gallery_img {
         height: 255px;
-        width: 116%;
+        width: 100%;
     }
     
     .gallery_div {
@@ -66,8 +66,11 @@
 
     .gallery_background {
         display: grid;
-        margin-left: -10px;
+        margin-left: 20px;
         margin-top: 52px;
         background-color: rgba(255, 255, 255, 0);
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
     }
 }
