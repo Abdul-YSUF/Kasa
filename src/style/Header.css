@@ -10,7 +10,7 @@ nav {
    margin-right: 20px;
 }
 
-.nav-active {
+.nav_active {
     padding: 30px;
     width: 50%;
     color: #FF6060;
@@ -20,7 +20,7 @@ nav {
     font-weight: 500;
 }
 
-.nav-inactive {
+.nav_inactive {
     padding:  30px;
     width: 50%;
     color: #ff6060;
@@ -43,12 +43,12 @@ nav {
         margin-right: 10px;
     }
 
-    .nav-active {
+    .nav_active {
         padding: 10px;
         font-size: 15px;
     }
 
-    .nav-inactive {
+    .nav_inactive {
         padding: 10px;
         font-size: 15px;
     }

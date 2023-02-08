@@ -7,17 +7,28 @@
 }
   
 .error_404 {  
-    font-size: 180px;
+    font-size: 160px;
     font-weight: 700;
     margin-top: 50px;
+    margin-bottom: 60px;
 }
   
 .error_description {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .error_return {
     font-size: 18px;
     color: #FF6060;
     margin-top: 100px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .error_404 {
+        font-size: 120px;
+    }
+
+    .error_description {
+        font-size: 30px;
+    }
 }

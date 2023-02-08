@@ -12,13 +12,13 @@ const Header = () => {
       <nav>
         <NavLink
           to="/"
-          className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
+          className={(nav) => (nav.isActive ? "nav_active" : "nav_inactive")}
         >
           Accueil
         </NavLink>
         <NavLink
           to="/about"
-          className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
+          className={(nav) => (nav.isActive ? "nav_active" : "nav_inactive")}
         >
           A Propos
         </NavLink>

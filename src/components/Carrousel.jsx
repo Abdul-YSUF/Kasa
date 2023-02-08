@@ -28,7 +28,7 @@ function Carrousel({ pictures }) {
           <img key={index} className={index === slide ? "carrousel_img actif" : "carrousel_img"} src={picture} alt=""/>
         );
       })}
-      {pictures?.length> 1 && (
+      {pictures?.length > 1 && (
         <img className="arrow arrow_right" src={arrow_right} alt="" onClick={nextSlide}/>
       )}
     </div>

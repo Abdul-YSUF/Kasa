@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "../style/Logement.css";
 import Carrousel from "../components/Carrousel";
 import Dropdown from "../components/Dropdown";
@@ -11,6 +11,7 @@ import Tags from "../components/Tags";
 const Logement = () => {
   const { id } = useParams();
   const [logement, setLogement] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("../logement.json")
@@ -18,6 +19,7 @@ const Logement = () => {
       .then((article) => {
         const data = article.find((item) => item.id === id);
         setLogement(data);
+        if (!data) navigate("/error");
       })
       .catch((error) => error);
   });
