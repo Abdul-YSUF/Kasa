@@ -1,7 +1,7 @@
 .about {
     margin-top: 170px;
     margin-bottom: -115px;
-    margin-left: 130px;
+    margin-left: 40px;
 }
 
 .dropdown {
@@ -16,7 +16,7 @@
     border-radius: 5px;
     display: inline-flex;
     height: 47px;
-    width: 70%;
+    width: 80%;
     margin-left: 100px;
     cursor: pointer;
 }
@@ -53,7 +53,7 @@
     height: auto;
     line-height: 30px;
     margin-left: 100px;
-    width: 70%;
+    width: 80%;
     padding: 30px 20px 100px 20px;
     margin-top: -5px;
 }
