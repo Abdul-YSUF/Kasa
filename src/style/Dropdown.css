@@ -1,6 +1,7 @@
 .about {
     margin-top: 170px;
     margin-bottom: -115px;
+    margin-left: 130px;
 }
 
 .dropdown {
@@ -16,7 +17,7 @@
     display: inline-flex;
     height: 47px;
     width: 70%;
-    margin-left: 190px;
+    margin-left: 100px;
     cursor: pointer;
 }
 
@@ -51,7 +52,7 @@
     color: #FF6060;
     height: auto;
     line-height: 30px;
-    margin-left: 190px;
+    margin-left: 100px;
     width: 70%;
     padding: 30px 20px 100px 20px;
     margin-top: -5px;
@@ -61,6 +62,7 @@
     .about {
         margin-top: 150px;
         margin-bottom: -115px;
+        margin-left: 0px;
     }
 
     .dropdown_div {
@@ -77,6 +79,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about {
+        margin-left: 0px;
+    }
+    
     .dropdown_div {
         width: 90%;
         margin-left: 60px;
