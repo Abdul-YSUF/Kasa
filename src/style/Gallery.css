@@ -74,3 +74,27 @@
         padding-bottom: 0px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1223px) {
+    .gallery_background {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .gallery_img {
+        height: 255px;
+        width: 107%;
+    }
+
+    .gallery h2 {
+        width: 80%;
+        top: -90px;
+    }
+
+    .gallery_div {
+        width: 100%;
+    }
+}
