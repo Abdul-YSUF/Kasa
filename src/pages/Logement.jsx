@@ -22,7 +22,7 @@ const Logement = () => {
         if (!data) navigate("/error");
       })
       .catch((error) => error);
-  });
+  },[id, navigate]);
 
   const {
     title,
@@ -35,9 +35,11 @@ const Logement = () => {
     equipments,
   } = logement;
 
+  document.title = `Kasa - ${title}`;
+
   return (
     <>
-      <Carrousel pictures={pictures}></Carrousel>
+      <Carrousel pictures={pictures} />
       <div className="logement_div">
         <div className="logement_title_tags">
           <Title title={title} location={location} />

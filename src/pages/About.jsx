@@ -5,6 +5,9 @@ import about from '../data/about.json';
 import Dropdown from '../components/Dropdown';
 
 const About = () => {
+
+    document.title = "Kasa - A Propos";
+    
     return (
         <>
            <Banner image={banner} />

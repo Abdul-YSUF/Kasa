@@ -13,6 +13,8 @@ const Accueil = () => {
 			.catch((error) => console.log(error))
 	});
 
+    document.title = "Kasa - Accueil";
+
     return (
         <>
             <Banner image={banner} title="Chez vous, partout et ailleurs" />

@@ -39,6 +39,14 @@ nav {
 
 /*Mobile de 375px à 767px*/ 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+    .header {
+        display: flex;
+        width: 101%;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: space-between;
+    } 
+    
     nav {
         margin-right: 10px;
     }
@@ -56,6 +64,6 @@ nav {
     .logo {
         margin-right: 70px;
         height: 35px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
