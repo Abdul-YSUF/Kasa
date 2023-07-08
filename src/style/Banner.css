@@ -26,9 +26,9 @@
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .banner_img {
-        width: 94%;
-        height: 160px;
-        margin-left: 10px;
+        width: 92%;
+        height: 170px;
+        margin-left: 20px;
         margin-top: -50px;
         border-radius: 10px;
     }

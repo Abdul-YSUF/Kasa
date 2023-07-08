@@ -39,6 +39,7 @@
 
 @media screen and (max-width: 767px) {
   .carrousel {
+    width: 96%;
     height: 260px;
     bottom: -20px;
     margin: 0 auto 0px auto;
