@@ -14,7 +14,7 @@ const Logement = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("../logement.json")
+    fetch("/logement.json")
       .then((res) => res.json())
       .then((article) => {
         const data = article.find((item) => item.id === id);

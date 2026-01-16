@@ -10,14 +10,15 @@ import Error404 from "./pages/Error404";
 const App = () => {
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
         <Route path="/logement/:id" element={<Logement />} />
-        <Route path="/*" element={<Error404 />} />
+        <Route path="/error" element={<Error404 />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
-    <Footer />
+      <Footer />
     </BrowserRouter>
   );
 };
