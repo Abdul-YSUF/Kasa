@@ -19,10 +19,25 @@ const Logement = () => {
       .then((article) => {
         const data = article.find((item) => item.id === id);
         setLogement(data);
-        if (!data) navigate("/error");
+        if (!data) {
+          navigate("/error", { replace: true });
+          return;
+        }
+
+        setLogement(data);
       })
-      .catch((error) => error);
-  },[id, navigate]);
+      .catch(() => {
+        navigate("/error", { replace: true });
+      });
+  }, [id, navigate]);
+
+  useEffect(() => {
+    if (logement?.title) {
+      document.title = `Kasa - ${logement.title}`;
+    }
+  }, [logement]);
+
+  if (!logement) return null;
 
   const {
     title,
@@ -34,8 +49,6 @@ const Logement = () => {
     description,
     equipments,
   } = logement;
-
-  document.title = `Kasa - ${title}`;
 
   return (
     <>
