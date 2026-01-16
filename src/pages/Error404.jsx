@@ -1,12 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../style/Error404.css';
+import React from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../style/Error404.css";
 
-const Erreur404 = () => {
+const Error404 = () => {
+  useEffect(() => {
+    document.title = "Kasa - Error 404";
+  }, []);
 
-  document.title = "Kasa - Error 404";
-  
-    return (
+  return (
     <div className="error">
       <h1 className="error_404">404</h1>
       <span className="error_description">
@@ -19,4 +21,4 @@ const Erreur404 = () => {
   );
 };
 
-export default Erreur404;
+export default Error404;
